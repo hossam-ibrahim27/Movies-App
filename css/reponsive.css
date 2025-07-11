@@ -1,0 +1,98 @@
+/* * Start Nav */
+@media (max-width:991px) {
+    .navbar.fixed-top {
+        padding: 18px 4% !important;
+    }
+
+    .navbar-collapse {
+        text-align: center !important;
+    }
+
+    .navbar-nav li {
+        margin: 0 !important;
+    }
+
+    .navbar.shadow .navbar-nav a:hover {
+        color: var(--main-color) !important;
+    }
+
+    .navbar-nav a div {
+        width: 14%;
+        left: 43%;
+        transform-origin: center;
+    }
+
+    .navbar-nav a div.homelink {
+        transform: scale(0);
+    }
+
+    .navbar-nav a div.cominglink {
+        left: 40%;
+        width: 20%;
+    }
+
+    .navbar-nav a:hover div,
+    .navbar-nav a:hover div.homelink {
+        transform: scale(1);
+    }
+}
+
+@media (max-width:774px) {
+    .navbar.fixed-top {
+        padding: 12px 4% !important;
+    }
+}
+
+@media (max-width: 370px) {
+    .navbar.fixed-top {
+        padding: 6px 4% !important;
+    }
+}
+
+/** End Nav */
+/***** Start home *****/
+@media (max-width:774px) {
+    .home-text h2 {
+        font-size: 2.4rem !important;
+    }
+
+    .btn.btn-home {
+        padding: 0.6rem 1.2rem !important;
+    }
+}
+
+@media (max-width: 370px) {
+    .home-text h2 {
+        font-size: 1.7rem !important;
+    }
+
+    .movies-container .card .box-img {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .home-text h2 {
+        font-size: 1.2rem !important;
+    }
+}
+
+/***** End home **** */
+@media (max-width:472px) {
+    footer {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .subscribe {
+        padding: 0 0.625rem;
+    }
+
+    .subscribe form .email {
+        display: none;
+    }
+
+    .subscribe form {
+        width: fit-content !important;
+    }
+}

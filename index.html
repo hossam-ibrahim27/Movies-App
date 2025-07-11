@@ -1,0 +1,407 @@
+<!-- *Sections are : 
+ *1- NavBar.
+ *2- Home.
+ *3- Movies.
+ *4- Coming-soon.
+ *5- Subscribe
+ *6- Fotter
+ *7- Coprrights
+ *-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@300;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,500;1,700&family=Tajawal:wght@200;300;400;500;800;900&family=Varela+Round&display=swap"
+        rel="stylesheet" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reponsive.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand text-white fw-semibold" href="#"><i
+                        class="fa-solid fa-film pe-2 fs-4"></i>Movies</a>
+                <!-- collaspe-menu -->
+                <button class="navbar-toggler bg-white border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /collaspe-menu -->
+                <!-- menu -->
+                <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item position-relative">
+                            <a class="nav-link active fw-medium fs-6" aria-current="page" href="#">Home<div
+                                    class="homelink"></div></a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-medium fs-6" href="#movies">Movies<div></div></a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-medium fs-6 special" href="#coming">Coming Soon<div
+                                    class="cominglink"></div></a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-medium fs-6 special" href="#subscribe">Newselter<div></div></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Menu -->
+                <form id="formcollabse" class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-navbar text-white fw-normal me-0" type="submit">Sign In</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- /header -->
+    <!-- ***************************************************************************************************** -->
+    <!-- Home -->
+    <section class="w-100 min-vh-100 position-relative home">
+        <div class="position-absolute home-text">
+            <span class="fw-medium text-black text-uppercase">Marvel Universe</span>
+            <h2 class="fw-bold mb-3">
+                Spider-Man<br />
+                Far From Home
+            </h2>
+            <a href="#" class="btn btn-home rounded-3 fw-normal" role="button">Book Now</a>
+        </div>
+    </section>
+    <!-- /home -->
+    <!-- ***************************************************************************************************** -->
+    <!-- Movies -->
+    <section id="movies">
+        <h2 class="heading fw-medium fs-5 text-uppercase me-auto ms-auto border-bottom border-1">Opening this Week</h2>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 me-auto ms-auto movies-container">
+            <!-- Box1 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m1.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Venom">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Venom</h5>
+                        <p class="card-text text-white">120min | Action</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box2 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m2.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Dunkerk">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Dunkerk</h5>
+                        <p class="card-text text-white">105min | Adventure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box3 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m3.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Batman & Superman">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Batman & Superman</h5>
+                        <p class="card-text text-white">100min | Thriller</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box4 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m4.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="John Wick">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">John Wick</h5>
+                        <p class="card-text text-white">120min | Adventure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box5 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m5.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Aquaman">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Aquaman</h5>
+                        <p class="card-text text-white">130min | Action</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box6 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m6.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Black Panther">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Black Panther</h5>
+                        <p class="card-text text-white">90min | Thriller</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box7 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m7.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Thor">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Thor</h5>
+                        <p class="card-text text-white">130min | Action</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box8 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m8.png" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Bumblebee">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Bumblebee</h5>
+                        <p class="card-text text-white">100min | Thriller</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box9 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m9.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Mortal Engines">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Mortal Engines</h5>
+                        <p class="card-text text-white">100min | Action</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box10 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/m10.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="UnderWorld Blood Wars">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title small fw-medium">UnderWorld Blood Wars</h5>
+                        <p class="card-text text-white">100min | Action</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /Movies-Container -->
+        </div>
+    </section>
+    <!-- /Movies -->
+    <!-- ***************************************************************************************************** -->
+    <!-- Coming-soon -->
+    <section id="coming">
+        <h2 class="heading fw-medium fs-5 text-uppercase me-auto ms-auto border-bottom border-1">Coming Soon</h2>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 me-auto ms-auto movies-container">
+            <!-- Box1 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming1.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Joney English">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Joney English</h5>
+                        <p class="card-text text-white">80min | Comedy</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box2 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming10.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="WarCrafet">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">WarCrafet</h5>
+                        <p class="card-text text-white">120min | Action</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box3 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming3.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Rampage">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Rampage</h5>
+                        <p class="card-text text-white">108min | Adventure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box4 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming4.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="John Wick">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Airon Lady</h5>
+                        <p class="card-text text-white">120min | Comedy</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box5 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming5.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Justice League">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Justice League</h5>
+                        <p class="card-text text-white">120min | Adventure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box6 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming6.jpeg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Doctor Strange">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Doctor Strange</h5>
+                        <p class="card-text text-white">120min | Adventure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box7 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming7.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Captain Marvel">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Captain Marvel</h5>
+                        <p class="card-text text-white">120min | Adventure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box8 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming8.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Black Widow">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Black Widow</h5>
+                        <p class="card-text text-white">90min | Action</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box9 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming9.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Ant Man">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fs-6 fw-medium">Ant Man</h5>
+                        <p class="card-text text-white">110min | Adventure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Box10 -->
+            <div class="col p-1">
+                <div class="card h-100 bg-black">
+                    <div class="box-img">
+                        <img src="Img/coming10.jpg" loading="lazy" draggable="false"
+                            class="card-img-top w-100 h-100 object-fit-cover" alt="Guardiance Of The Galaxy">
+                    </div>
+                    <div class="card-body ps-0">
+                        <h5 class="card-title fw-medium" style="font-size: 0.82rem !important;">Guardiance Of The Galaxy
+                        </h5>
+                        <p class="card-text text-white">120min | Adventure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /Movies-Container -->
+        </div>
+    </section>
+    <!-- /Coming-soon -->
+    <!-- ***************************************************************************************************** -->
+    <!-- Subscribe -->
+    <section id="subscribe"
+        class="me-auto ms-auto d-flex row-gap-4 flex-column align-items-center justify-content-center subscribe">
+        <h2 class="text-center fw-semibold">
+            Subscribe To Get <br /> Newsletter
+        </h2>
+        <form class="d-flex align-items-center justify-content-between rounded-2 m-auto p-2">
+            <input class="email border-0" type="email" placeholder="Enter Email..." />
+            <input type="submit" value="Subscribe" class="btn border-0 rounded-2 fw-semibold text-uppercase" />
+        </form>
+    </section>
+    <!-- /Subscribe -->
+    <!-- ***************************************************************************************************** -->
+    <footer class="me-auto ms-auto d-flex align-items-center justify-content-between">
+        <a href="index.html" class="text-decoration-none fw-semibold fs-6 d-flex align-items-center column-gap-2 logo">
+            <i class="fa-solid fa-film text-decoration-none fs-4"></i> Movies
+        </a>
+        <div class="social-icons d-flex align-items-center column-gap-2">
+            <a href="#" title="facebook" class="rounded-circle fs-2 text-center ">
+                <i class="fa-brands fa-facebook"></i></a>
+            <a href="#" title="instagram" class="rounded-circle fs-2 text-center ">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="twitter" class="rounded-circle fs-2 text-center ">
+                <i class="fa-brands fa-twitter"></i></a>
+            <a href="#" title="tiktok" class="rounded-circle fs-2 text-center ">
+                <i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <!-- footer -->
+        <!-- copyrights -->
+    </footer>
+    <!-- ***************************************************************************************************** -->
+    <!-- copyrights -->
+    <div class="text-center fs-6 copyrights">
+        <p>&#169; <span>Web Masters</span> All Right Reserved.</p>
+    </div>
+    <!-- copyrights -->
+    <!-- ***************************************************************************************************** -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
